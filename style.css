@@ -1,0 +1,133 @@
+
+@keyframes slidein{
+
+0%{
+    left:0;
+    top:0;
+    background-color: yellow;
+}
+50%{
+left: 400px;
+top:200px;
+background-color: red;
+
+}
+100%{
+
+    left:800px;
+    top:0;
+    background-color: rgb(252, 252, 252);
+}
+ 
+}
+
+
+@keyframes slidein2{
+
+    0%{
+       
+        background-color:white;
+    }
+    50%{
+    left: 400px;
+    top:200px;
+    background-color:rgb(255, 255, 0);
+    
+    }
+    100%{
+    
+        left:800px;
+        top:0;
+        background-color: rgb(54, 46, 46);
+    }
+     
+    }
+
+.box1{
+
+width: 400px;
+height: 300px;
+border:1px solid red;
+overflow: scroll;
+
+}
+.box2{
+
+    width: 400px;
+    height: 300px;
+    border:1px solid red;
+    overflow: scroll;
+    }
+    .box{
+
+        width: 200px;
+        height: 200px;
+        border:1px solid rgb(14, 11, 11);
+        transition: all 5s ease 1s;
+       
+        }
+        .outer{
+
+            background-color: salmon;
+        }
+
+        .inner{
+
+
+            background-color: seagreen;
+            transform: rotate(60deg) scale(.67);
+
+            
+        }
+        .box:hover{
+           width: 500px;
+         background-color:rgb(42, 3, 70) 
+          
+
+        }
+        .bat{
+
+            transition: transform  0.3s ease-in ;
+        }
+        .bat:hover{
+
+            transform: rotate(-60deg);
+            transform-origin: 100% 0% ;
+        }
+        
+         .ball{
+             height: 50px;
+             width: 50px;
+             border-radius: 50%;
+             background-color: red;
+             position: relative;
+             left: 490px;
+             bottom: 50px;
+             transition: 2s ease-in 0.3s;
+         }
+         .field:hover .ball{
+           transform: translate(760px,-200px);
+
+         }
+         .ball_animation{
+
+height: 100px;
+width: 100px;
+border-radius: 50%;
+background-color: red;
+position: absolute;
+
+         }
+         .stage{
+
+background-color:green;
+height: 300px;
+min-width: 800px;
+animation: slidein2 5s ease 0s  infinite alternate;
+
+         }
+         .stage:hover .ball_animation{
+animation: slidein 5s ease 1s  infinite alternate;
+
+
+         }
